@@ -1,9 +1,4 @@
-# kish
-
-kish is an kish app.
-
-This project adheres to the Contributor Covenant [code of conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code.
-We appreciate your contribution. Please refer to our [contributing guidelines](CONTRIBUTING.md).
+# kisher
 
 [![Release](https://img.shields.io/github/release/superliuwr/kish.svg?style=flat-square)](https://github.com/superliuwr/kish/releases/latest)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)

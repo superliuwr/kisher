@@ -16,6 +16,9 @@ endif
 	dep ensure -vendor-only
 .PHONY: setup
 
+clean:
+	rm -f ./kisher
+
 test:
 	go test $(TEST_OPTIONS) -v -failfast -race -coverpkg=./... -covermode=atomic -coverprofile=coverage.out $(SOURCE_FILES) -run $(TEST_PATTERN) -timeout=2m
 
@@ -30,8 +33,8 @@ lint:
 
 ci: lint test
 
-build:
-	go build ./cmd/kish
+build: clean cover
+	go build ./cmd/kisher
 
 run: build
 	./kisher
