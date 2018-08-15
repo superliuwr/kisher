@@ -1,0 +1,17 @@
+builds:
+  - main: ./cmd/kish/main.go
+    goarch:
+      - amd64
+    env:
+      - CGO_ENABLED=0
+brew:
+  github:
+    owner: caarlos0
+    name: homebrew-tap
+  folder: Formula
+# dockers:
+#   - image: superliuwr/kish
+#     tag_templates:
+#     - latest
+#     - "{{ .Tag }}"
+#     - "v{{ .Major }}"

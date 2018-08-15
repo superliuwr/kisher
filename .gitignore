@@ -1,0 +1,6 @@
+vendor/
+dist/
+bin/
+coverage.out
+example
+kish
